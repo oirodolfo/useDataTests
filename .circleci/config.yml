@@ -45,7 +45,9 @@ refs:
     - &Release
       run:
         name: Release
-        command: yarn publish
+        command: | 
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+          yarn publish
     - &Commit_Status_Storybook
       run:
         name: Post commit status for Storybook
