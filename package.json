@@ -1,5 +1,5 @@
 {
-  "name": "@oirodolfo/usedatatests",
+  "name": "usedatatests",
   "version": "0.1.2",
   "license": "MIT",
   "main": "dist/index.js",
@@ -40,7 +40,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "author": "Rod Kisten",
+  "author": "@oirodolfo",
   "module": "dist/usedatatests.esm.js",
   "size-limit": [
     {
