@@ -45,7 +45,7 @@ refs:
     - &Release
       run:
         name: Release
-        command: yarn release
+        command: yarn publish
     - &Commit_Status_Storybook
       run:
         name: Post commit status for Storybook
