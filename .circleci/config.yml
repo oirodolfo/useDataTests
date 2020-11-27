@@ -41,7 +41,7 @@ refs:
     - &Upload_Storybook
       run:
         name: Upload Storybook
-        command: yarn storybook:upload
+        command: yarn build-storybook
     - &Release
       run:
         name: Release
@@ -89,10 +89,10 @@ jobs:
       - run:
           name: Setup GitHub
           command: |
-            git config --global user.email "streamich@gmail.com"
-            git config --global user.name "streamich"
+            git config --global user.email "rodolfocostaclemente@gmail.com"
+            git config --global user.name "Rod Kisten"
             git remote rm origin
-            git remote add origin https://${GITHUB_TOKEN}@github.com/streamich/react-use
+            git remote add origin https://${GITHUB_TOKEN}@github.com/oirodolfo/useDataTests
       - *Release
 
   master:
@@ -113,10 +113,10 @@ jobs:
       - run:
           name: Setup GitHub
           command: |
-            git config --global user.email "streamich@gmail.com"
-            git config --global user.name "streamich"
+            git config --global user.email "rodolfocostaclemente@gmail.com"
+            git config --global user.name "Rod Kisten"
             git remote rm origin
-            git remote add origin https://${GITHUB_TOKEN}@github.com/streamich/react-use
+            git remote add origin https://${GITHUB_TOKEN}@github.com/oirodolfo/useDataTests
       - *Upload_Storybook
       - *Release
 
