@@ -29,7 +29,7 @@ refs:
     - &Build_Storybook
       run:
         name: Build Storybook
-        command: yarn storybook:build
+        command: yarn build-storybook
     - &Lint
       run:
         name: Lint
